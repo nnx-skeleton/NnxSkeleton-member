@@ -18,7 +18,7 @@
     "satooshi/php-coveralls": "~1.0.0",
    }, 
    "psr-4": {
-      "Nnx\\Member\\": "src/"
+      "Nnx\\Member\\Member\\": "src/"
     },
    "classmap": [
       "./Module.php",
@@ -27,8 +27,8 @@
   },
    "autoload-dev": {
      "psr-4": {
-       "Nnx\\Member\\PhpUnit\\Test\\": "test/phpunit/tests",
-       "Nnx\\Member\\PhpUnit\\TestData\\": "test/phpunit/_files"
+       "Nnx\\Member\\Member\\PhpUnit\\Test\\": "test/phpunit/tests",
+       "Nnx\\Member\\Member\\PhpUnit\\TestData\\": "test/phpunit/_files"
     },
     "classmap": [
       "./test/phpunit/Bootstrap.php",
