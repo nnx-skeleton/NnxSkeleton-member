@@ -1,6 +1,6 @@
 <?php
 /**
- * @link    https://github.com/nnx-skeleton/nnx-member-user
+ * @link    https://github.com/nnx-skeleton/nnx-member-member
  * @author  Plitakov Dmitry  <plitakov94@gmail.com>
  */
 namespace NnxMember\Member\PhpUnit\Test;
