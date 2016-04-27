@@ -4,11 +4,14 @@
  * @author  Plitakov Dmitry  <plitakov94@gmail.com>
  */
 namespace NnxMember\Member\PhpUnit\Test;
+
 use Zend\Loader\AutoloaderFactory;
 use Zend\Loader\StandardAutoloader;
 use RuntimeException;
+
 error_reporting(E_ALL | E_STRICT);
 chdir(__DIR__);
+
 /**
  * Class Bootstrap
  *
