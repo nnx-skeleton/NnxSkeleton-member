@@ -1,7 +1,7 @@
 <?php
 /**
  * @link    https://github.com/nnx-skeleton/nnx-member-user
- * @author  Plitakov Dmitry  <and-rey2@yandex.ru>
+ * @author  Plitakov Dmitry  <plitakov94@gmail.com>
  */
 namespace NnxMember\Member\PhpUnit\Test;
 use Zend\Loader\AutoloaderFactory;
