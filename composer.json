@@ -1,5 +1,5 @@
 {
-  "name": "nnx-member/member",
+  "name": "NnxSkeleton/member",
   "description": "Service Member",
   "type": "library",
   "authors": [
@@ -19,7 +19,7 @@
     "zendframework/zend-loader": "~2.4.0"
    }, 
    "psr-4": {
-      "Nnx\\Member\\Member\\": "src/"
+      "NnxSkeleton\\Member\\": "src/"
     },
    "classmap": [
       "./Module.php",
@@ -27,8 +27,8 @@
     ],
    "autoload-dev": {
      "psr-4": {
-       "Nnx\\Member\\Member\\PhpUnit\\Test\\": "test/phpunit/tests",
-       "Nnx\\Member\\Member\\PhpUnit\\TestData\\": "test/phpunit/_files"
+       "NnxSkeleton\\Member\\PhpUnit\\Test\\": "test/phpunit/tests",
+       "NnxSkeleton\\Member\\PhpUnit\\TestData\\": "test/phpunit/_files"
     },
     "classmap": [
       "./test/phpunit/Bootstrap.php",
