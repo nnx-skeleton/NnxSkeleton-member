@@ -1,9 +1,9 @@
 <?php
 /**
- * @link    https://github.com/nnx-skeleton/nnx-member-member
+ * @link    https://github.com/nnx-skeleton/NnxSkeleton-member
  * @author  Plitakov Dmitry  <plitakov94@gmail.com>
  */
-namespace NnxMember\Member\PhpUnit\Test;
+namespace NnxSkeleton\Member\PhpUnit\Test;
 
 use Zend\Loader\AutoloaderFactory;
 use Zend\Loader\StandardAutoloader;
@@ -15,7 +15,7 @@ chdir(__DIR__);
 /**
  * Class Bootstrap
  *
- * @package NnxMember\Member\PhpUnit\Test
+ * @package NnxSkeleton\Member\PhpUnit\Test
  */
 class Bootstrap
 {
@@ -51,9 +51,9 @@ class Bootstrap
                 StandardAutoloader::class => [
                     'autoregister_zf' => true,
                     'namespaces' => [
-                        'NnxMember\\Member' => __DIR__ . '/../../src/',
+                        'NnxSkeleton\\Member' => __DIR__ . '/../../src/',
                         __NAMESPACE__ => __DIR__ . '/tests/',
-                        'NnxMember\\Member\\PhpUnit\\TestData' => __DIR__ . '/files'
+                        'NnxSkeleton\\Member\\PhpUnit\\TestData' => __DIR__ . '/files'
                     ]
                 ]
             ]);
