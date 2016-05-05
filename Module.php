@@ -5,6 +5,7 @@
  * Date: 04.05.16
  * Time: 15:38
  */
+namespace NnxSkeleton\Member;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
