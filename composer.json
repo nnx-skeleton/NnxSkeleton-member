@@ -10,6 +10,9 @@
     ],
     "require": {
         "php": ">=5.5.0",
+        "nnx-skeleton-member/core": "dev-master",
+        "nnx-skeleton-member/user": "dev-master",
+        "nnx-skeleton-member/organization": "dev-master",
         "nnx/module-options": "0.1.*"
     },
     "require-dev": {
