@@ -26,7 +26,7 @@ class Module implements
     CommonModuleOptionsInterface
 
 {
-    use IntegrationModuleTrait, EventManagerAwareTrait
+    use IntegrationModuleTrait, EventManagerAwareTrait;
     /**
      * Имя секции в конфиге приложения, отвечающей за настройки модуля
      *
