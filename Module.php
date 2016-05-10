@@ -13,6 +13,10 @@ use Zend\EventManager\EventManagerAwareTrait;
 use Nnx\ModuleOptions\ModuleConfigKeyProviderInterface;
 use Nnx\Module\IntegrationModuleTrait;
 use Nnx\Module\IntegrationModuleInterface;
+use Nnx\Module\CommonModuleOptionsInterface;
+use NnxSkeletonMember\Core\Module as CoreModule;
+use NnxSkeletonMember\User\Module as UserModule;
+use NnxSkeletonMember\Organization\Module as OrganizationModule;
 
 class Module implements
     AutoloaderProviderInterface,
@@ -22,7 +26,14 @@ class Module implements
     CommonModuleOptionsInterface
 
 {
-    use IntegrationModuleTrait, EventManagerAwareTrait;
+    use IntegrationModuleTrait, EventManagerAwareTrait
+    /**
+     * Имя секции в конфиге приложения, отвечающей за настройки модуля
+     *
+     * @var string
+     */
+    const CONFIG_KEY = 'nnx_skeleton_member';
+
     /**
      * Имя модуля
      *
@@ -31,15 +42,39 @@ class Module implements
     const MODULE_NAME = __NAMESPACE__;
 
     /**
-     * Имя модуля
+     * Возвращает список модулей, принадлежащих данному сервису
      *
-     * @var string
-     */
-    const CONFIG_KEY = 'nnx_skeleton_member';
-
-    /**
      * @return array
      */
+    public function getServiceModules()
+    {
+        return [
+            CoreModule::MODULE_NAME,
+            UserModule::MODULE_NAME,
+            OrganizationModule::MODULE_NAME,
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     *
+     * @return array
+     */
+    public function getCommonModuleOptions()
+    {
+        return [
+
+        ];
+    }
+
+    /**
+     * @return string
+     */
+    public function getModuleConfigKey()
+    {
+        return static::CONFIG_KEY;
+    }
+
     public function getAutoloaderConfig()
     {
         return array(
