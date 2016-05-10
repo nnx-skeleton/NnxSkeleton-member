@@ -9,12 +9,20 @@ namespace NnxSkeletonMember\Member;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
+use Zend\EventManager\EventManagerAwareTrait;
+use Nnx\ModuleOptions\ModuleConfigKeyProviderInterface;
+use Nnx\Module\IntegrationModuleTrait;
+use Nnx\Module\IntegrationModuleInterface;
 
 class Module implements
     AutoloaderProviderInterface,
-    ConfigProviderInterface
-{
+    ConfigProviderInterface,
+    ModuleConfigKeyProviderInterface,
+    IntegrationModuleInterface,
+    CommonModuleOptionsInterface
 
+{
+    use IntegrationModuleTrait, EventManagerAwareTrait;
     /**
      * Имя модуля
      *
