@@ -23,6 +23,13 @@ class Module implements
     const MODULE_NAME = __NAMESPACE__;
 
     /**
+     * Имя модуля
+     *
+     * @var string
+     */
+    const CONFIG_KEY = 'nnx_skeleton_member';
+
+    /**
      * @return array
      */
     public function getAutoloaderConfig()
